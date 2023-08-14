@@ -1,0 +1,5 @@
+version: '3.4'
+services:
+  netbox:
+    ports:
+      - "28000:8080"
