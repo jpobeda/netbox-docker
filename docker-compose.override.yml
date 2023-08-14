@@ -4,4 +4,16 @@ services:
     ports:
       - "28000:8080"
     healthcheck:
-      retries: 15
+      start_period: 120s
+      timeout: 5s
+      interval: 15s
+  netbox-housekeeping:
+    healthcheck:
+      start_period: 120s
+      timeout: 5s
+      interval: 15s
+  netbox-worker:
+    healthcheck:
+      start_period: 120s
+      timeout: 5s
+      interval: 15s
